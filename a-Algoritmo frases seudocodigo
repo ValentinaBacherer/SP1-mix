@@ -1,0 +1,59 @@
+// Ordenamiento de frases. 
+// https://www.geeksforgeeks.org/recursive-bubble-sort/
+// https://learnersbucket.com/examples/algorithms/recursive-bubble-sort-algorithm/
+
+INPUT
+Array con n frases
+frases = ["la programación es un arte y tod@s podemos aprender",9
+          "Ada School es una escuela de programación online",8
+          "hoy es viernes",3
+          "mañana es sábado y vamos a descansar",7
+          "el trabajo en equipo es muy importante para el éxito profesional"11]
+          ]
+
+frases-ordenadas = [
+    
+];
+long-primer = 0
+long-ultimo = 0
+
+para cada frase en frases : 
+
+funcion (frase, arreglo-frases-ordenadas ) 
+      frases-ordenadas esta vacio?
+        si => { frases-ordenadas.push(frase)
+              long-primer = long-ultimo = long(frase)}
+        no => { long(frase) <= long-primer?
+                    si = > { 
+                        frases-ordenadas.shift(frase)
+                        long-primer = long(frase);}
+                    no = > { 
+                        long(frase) >= long-ultimo?
+                            si => { 
+                                frases-ordenadas.push(frase);
+                                long-ultimo = long(frase)
+                            }
+                            no => llamarfuncion con arreglo
+                                  sin ultimo ni primero.
+                    }
+            
+        }
+
+    longitud-actual = longitud(frase) 
+     longitud-actual es < longitud-ultima?
+      si = > frases-ordenadas.shift(frase)
+      no = > frases-ordenadas.push(frase)
+     longitud-ultima = longitud-actual
+
+
+
+inicializar el output
+recorrer cada una de las frases
+preguntar cual es el largo
+
+
+
+
+
+OUTPUT
+Array con n frases ordenadas

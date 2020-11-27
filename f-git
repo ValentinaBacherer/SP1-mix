@@ -1,0 +1,38 @@
+COMANDOS PARA LA TERMINAL
+// para configurar el git
+git config --global user.name "juan perez"
+git config --global user.email "juan perez@gmail.com"
+
+//para ver como lo tengo configurado
+git config --list
+// En general, algunos comandos de git (como el git config --list) 
+//abren el editor de texto que tenga configurado 
+//por defecto la consola. En este caso fue un editor que se 
+//llama vim . El comando de vim para cerrar un archivo o contenido abierto es q que es un shorthand para quit
+
+//para inicializa
+git init
+
+//para ver 
+ls -alh
+//para crear un archivo
+touch texto.txt
+
+//para que ignore
+vim .gitignore
+//adentro le ponemos texto.txt. Tambien le podemos 
+poner wildcards
+*.txt
+secreto/*
+
+// vim tiene dos modos. editor(hit i) y comando (esc)
+//para guardar el vim https://www.youtube.com/watch?v=ggSyF1SVFr4
+:wq   (write and quit. o por separado)
+:q!  (quit without saving)
+:set number (turns on numbering) 
+
+//para ver el status
+git status
+
+//para agregar los archivos que no estan trackeados
+git add -A
